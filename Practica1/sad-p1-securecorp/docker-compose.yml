@@ -64,6 +64,7 @@ services:
       - servidor
 
   # ✍️ Parte C: aquí va el servicio web
+<<<<<<< HEAD
   web:
     build: ./web
     container_name: sad-p1-web
@@ -77,6 +78,8 @@ services:
           - web.securecorp.local
     depends_on:
       - servidor
+=======
+>>>>>>> 1439cda063a51e3a89ef473224c880375f03991e
 
 networks:
   securecorp:

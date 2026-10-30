@@ -12,17 +12,31 @@ Responde con tus palabras, en 1-3 líneas. En la defensa te preguntaré lo mismo
 
 ---
 
+<<<<<<< HEAD
 **1. (A1)** ¿Quién es el issuer de tu ca.crt? ¿Hasta qué fecha es válido? ¿Por qué el subject y el issuer de la CA son iguales y los de ldap.crt no?
  El issuer de ca.crt es C = ES. Es valido hasta el 4 de octubre de 2036 a hasta la hora 17:10:36. El subject y el issuer son igual porque la misma entidad que es dueña del certificado lo ha firmado.Es decir es un certificado autofirmado. Porque el subject de ldap.crt es el servidor LDAP y quien lo firma es el CA.
 
 **2. (A3)** Pega el comando y el resultado de tus dos búsquedas:
 
+=======
+**1. (A1)** ¿Quién es el `issuer` de tu `ca.crt`? ¿Hasta qué fecha es válido? ¿Por qué el `subject`
+y el `issuer` de la CA son iguales y los de `ldap.crt` no?
+El issuer de ca.crt es C = ES. 
+Es valido hasta el 4 de octubre de 2036 a hasta la hora 17:10:36.
+El subject y el issuer son igual porque la misma entidad que es dueña del certificado lo ha firmado.Es decir es un certificado autofirmado.
+Porque el subject de ldap.crt es el servidor LDAP y quien lo firma es el CA.
+
+**2. (A3)** Pega el comando y el resultado de tus dos búsquedas:
+
+```
+>>>>>>> 1439cda063a51e3a89ef473224c880375f03991e
 a) miembros de rrhh:
 Lucia y Marta
 b) cn y mail de todas las personas:
 lromero@securecorp.local      cn:Lucia Romero
 mtorres@securecorp.local      cn:Sergio Gonzalez
 sgonzalez@securecorp.local    cn:Marta Torres
+<<<<<<< HEAD
 
 Contraseña sgonzalez: Sergio2026 Contraseña mtorres: Marta2026 3. (A4) ¿Por qué la clave ldap.key tiene que ser de openldap y tener permisos 600?
 
@@ -52,3 +66,31 @@ Buildm indica donde esta el dockerfile con el que se construye la imagen y image
 **8. (C)** ¿Por qué en la máquina web no has tenido que escribir a mano TLS_CACERT, y en el cliente sí? ¿Qué pasaría con esa línea del cliente si hicieras ./lab.sh reset?
 
 Porque en la maquina web se a;ade automaticamente durante la construccion de la imagen. Se perderia la configuracion del cliente y tendriamos que volver a hacerla.
+=======
+```
+Contraseña sgonzalez: Sergio2026
+Contraseña mtorres: Marta2026
+**3. (A4)** ¿Por qué la clave `ldap.key` tiene que ser de `openldap` y tener permisos 600?
+
+
+**4. (A4)** ¿Qué valor has puesto en `SLAPD_SERVICES` y por qué?
+
+
+**5. (A4)** Antes de añadir `TLS_CACERT` en el cliente, `ldaps://` no funcionaba. ¿Por qué?
+
+
+**6. (B3)** Pega la salida de `klist` con tus dos tickets. ¿Para qué sirve cada uno? ¿Ha viajado tu
+contraseña por la red?
+
+```
+
+```
+
+**7. (C)** En el `docker-compose.yml`, ¿qué diferencia hay entre `build:` e `image:`? ¿Qué
+significa la línea `- "8081:80"` del servicio `phpldapadmin`?
+
+
+**8. (C)** ¿Por qué en la máquina `web` no has tenido que escribir a mano `TLS_CACERT`, y en el
+cliente sí? ¿Qué pasaría con esa línea del cliente si hicieras `./lab.sh reset`?
+
+>>>>>>> 1439cda063a51e3a89ef473224c880375f03991e
