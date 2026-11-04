@@ -1,4 +1,4 @@
-# Laboratorio de clase · SAD UD3 (cortafuegos) y UD4 (VPN). Se maneja con ./lab.sh (./lab.sh ayuda).
+# Batería guiada SAD · UD3 + UD4. Es el laboratorio de clase (mismas máquinas y redes): usa este O el de clase, no los dos a la vez. Se maneja con ./lab.sh (./lab.sh ayuda).
 #
 #   «Internet» 203.0.113.0/24      DMZ 10.10.20.0/24      LAN 10.10.10.0/24
 #   internet .50 · remoto .60       web .10                 pc .5
