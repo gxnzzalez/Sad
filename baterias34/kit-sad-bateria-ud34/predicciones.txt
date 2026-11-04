@@ -1,4 +1,8 @@
-22=
-80=
-443=
-8080=
+22=filtered
+80=open
+443=closed
+8080=filtered
+
+El dnat publica los puertos 80 y 443.
+
+La web si escucha en el puerto 443.
