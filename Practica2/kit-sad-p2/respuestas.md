@@ -26,9 +26,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1.28 seconds
 ## Bloque A · El contador
 
 Después de `./lab.sh comprobar`, mira `./lab.sh ver`. ¿Cuántos paquetes lleva el contador de A6? ¿Quién los ha mandado?
-
+Los ha mandado la tienda y ha mandado 17.
 >
-
 ## Bloque B · La prueba del cifrado
 
 En el firewall (`./lab.sh fw`): `tcpdump -ni wan host 198.51.100.62 -c 6`. Mientras, en otra terminal, el comercial
