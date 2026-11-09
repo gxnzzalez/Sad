@@ -34,11 +34,22 @@ En el firewall (`./lab.sh fw`): `tcpdump -ni wan host 198.51.100.62 -c 6`. Mient
 (`./lab.sh comercial`) hace `curl http://172.16.10.20:8080`. Pega lo que sale en el firewall:
 
 ```text
-(pega aquí la salida de tcpdump)
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wan, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+16:43:27.273454 ARP, Request who-has 198.51.100.62 tell 198.51.100.254, length 28
+16:43:27.273537 ARP, Reply 198.51.100.62 is-at 86:d2:3e:6a:f5:46, length 28
+16:43:30.903057 IP 198.51.100.62.39108 > 198.51.100.254.51820: UDP, length 96
+16:43:30.903204 IP 198.51.100.254.51820 > 198.51.100.62.39108: UDP, length 96
+16:43:30.903309 IP 198.51.100.62.39108 > 198.51.100.254.51820: UDP, length 96
+16:43:30.903345 IP 198.51.100.62.39108 > 198.51.100.254.51820: UDP, length 176
+6 packets captured
+12 packets received by filter
+0 packets dropped by kernel
+
 ```
 
 En dos líneas: ¿qué se ve por la calle y qué NO se ve?
-
+SE ve la tienda online y la puerta de enlace de la VPN. No se ve la administracion de la tienda, la intranet y cualquier otro puerto que no aparezca en la cadena fordward.
 >
 
 ## Bloque C · Para la defensa (C4)
