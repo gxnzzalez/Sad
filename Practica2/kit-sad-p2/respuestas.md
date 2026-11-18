@@ -66,7 +66,7 @@ Mientras que el WAF ve las peticiones enteras, como los metodos (get, post...), 
 
 Nota del análisis **antes** de bastionar (D0):
 
-> 50
+> 58
 
 Nota **después** (D4). ¿Por qué no llega a 100? ¿Significa que el servidor sigue inseguro? Comenta un aviso que siga saliendo.
 
