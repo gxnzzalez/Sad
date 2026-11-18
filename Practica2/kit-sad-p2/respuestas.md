@@ -57,7 +57,10 @@ SE ve la tienda online y la puerta de enlace de la VPN. No se ve la administraci
 Del **mismo ataque** (la inyección a la web): ¿qué ve el vigilante de la red (el IDS) y qué ve el portero de la web? ¿Por
 qué hacen falta los dos?
 
->
+>El IDS es aquel que verifica que se envia y desde que direccion se envia, y el portero de la web es aquel que registra lo que se te ha enviado, es decir me han enviado un paquete desde la ip x, el portero verifica que hay dentro del paquete. Ambos se complementan, ya que uno guarda la informacion de donde viene y que te mandan y el otro comprueba que no sea malicioso.
+
+Suricata mira los paquetes de red, como las IPs o puertos, ve como se han enviado, con que cifrados y es capaz de bloquear por IPs o por red.
+Mientras que el WAF ve las peticiones enteras, como los metodos (get, post...), mira los contenidos completos descifrados y bloquea o permite el envio de paquetes a las rutas.
 
 ## Bloque D · La nota del servidor (D0 y D4)
 
