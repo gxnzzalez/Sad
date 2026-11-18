@@ -66,8 +66,11 @@ Mientras que el WAF ve las peticiones enteras, como los metodos (get, post...), 
 
 Nota del análisis **antes** de bastionar (D0):
 
->
+> 50
 
 Nota **después** (D4). ¿Por qué no llega a 100? ¿Significa que el servidor sigue inseguro? Comenta un aviso que siga saliendo.
 
->
+> 63 . No llega a 100 porque aun podria añadir mas configuraciones de seguridad. 
+No significa que siga inseguro, significa que podria implementar mas seguridad, aunque podemos estar tranquilos tal y como esta ahora.
+Aviso -->  SSH-7408 · Consider hardening SSH configuration · TCPKeepAlive (set YES to NO)
+
